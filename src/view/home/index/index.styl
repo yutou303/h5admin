@@ -1,0 +1,83 @@
+@import '../../../common/stylus/mixin.styl';
+.company-info
+    text-align center
+    .company-head
+        padding .8rem 0
+        .company-logo
+            margin 0 auto .2rem
+            height .8rem
+        .company-name
+            font-size .26rem
+            font-weight 500
+            padding 0 .5rem
+            color #333
+    .company-column
+        display flex
+        > div
+            flex 1
+            text-align center
+            font-size 0
+            padding .3rem 0
+            em
+                font-size .3rem
+                color #444
+            p
+                font-size .24rem
+                color #999
+                margin-top .1rem
+        > div:first-child
+            em
+                color #ff8738
+.company-business
+    .business-type
+        padding 0 .24rem
+        h3
+            position relative
+            font-size .3rem
+            padding .3rem .2rem
+            &:before
+                content ''
+                position absolute
+                left 0
+                top 50%
+                width .05rem
+                height .26rem
+                background-color #ff7419
+                transform translateY(-50%)
+    .business-info
+        padding .4rem 0
+        color #999
+        font-size 0
+        .total
+            margin-bottom .25rem
+            padding 0 .24rem
+            p
+                font-size .24rem
+                margin-bottom .05rem
+            em
+                font-size .44rem
+                color #ff7419
+        .company-column
+            display flex
+            > div
+                position relative
+                flex 1
+                padding-left .3rem
+                font-size 0
+                borderLeft(1px,#cacaca)
+                &:first-child
+                    &:before
+                        display none
+                p
+                    font-size .2rem
+                    margin-bottom .05rem
+                em
+                    font-size .44rem
+                    color #444
+        .more
+            text-align center
+            margin-top .3rem
+            > a
+                display block
+                font-size .24rem
+                color #006cff

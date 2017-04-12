@@ -1,0 +1,27 @@
+@import '../../../common/stylus/mixin.styl';
+.tradeItems
+    padding 0 .2rem
+    .item
+        font-size .22rem
+        color #999
+        .item-hd
+            display flex
+            justify-content space-between
+            padding .25rem .25rem 0
+        .item-info
+            padding .25rem
+            borderTop(1px,#e6e6e6)
+            .name
+                font-size .3rem
+                color #444
+            .state
+                display flex
+                justify-content space-between
+                padding-top .1rem
+            .price
+                 padding-top .25rem
+                em
+                    font-size .36rem
+                    color #ff7419
+            &:last-child:after
+                display none

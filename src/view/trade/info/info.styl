@@ -1,0 +1,104 @@
+@import '../../../common/stylus/mixin.styl';
+.order-num
+    borderTop(1px,#e6e6e6)
+    display flex
+    justify-content space-between
+    align-items center
+    padding .3rem .25rem
+    font-size .34rem
+    color #5d5d5d
+    .num em
+        color #c11920
+    .states
+        font-size .24rem
+        color #757575
+.addresswrapper
+    background-image url('./address-bg.png')
+    background-repeat repeat
+    padding .15rem
+    .content
+        background-color #FFF
+        padding .15rem .2rem
+        font-size .26rem
+        color #5d5d5d
+        .field
+            display flex
+            padding .08rem 0
+            .td
+                flex 1
+            .th
+                width 1.4rem
+                text-align right
+.buyerWrapper
+    margin-bottom 1.5rem!important
+    .buyer
+        padding .3rem .3rem 0
+        font-size .22rem
+        color #999
+    .goods
+        borderTop(1px,#e6e6e6)
+        display flex
+        padding .3rem
+        .img
+            width 1.8rem
+            height 1.8rem
+            margin-right .3rem
+            img
+                width 1.8rem
+                height 1.8rem
+        .info
+            flex 1
+            display flex
+            flex-direction column
+            justify-content space-between
+            .goods-name
+                font-size .3rem
+                color #444
+            .goods-price
+                display flex
+                justify-content space-between
+                align-items center
+                .unit
+                    color #999
+                    font-size .22rem
+                .price
+                    font-size .26rem
+                    color #adadad
+                    em
+                        font-size .3rem
+                        color #ff7419
+    .bTr
+        display flex
+        justify-content space-between
+        align-items center
+        padding .3rem
+        .th
+            color #888
+            font-size .22rem
+        .price
+            font-size .3rem
+            color #ff7419
+.tradeTotal
+    position fixed
+    left 0
+    bottom 0
+    width 100%
+    padding .3rem
+    background-color rgba(0,0,0,.8)
+    color #FFF
+    display flex
+    justify-content space-between
+    align-items center
+    .info
+        p
+            font-size .22rem
+            font-weight 500
+            margin-bottom .05rem
+        em
+            font-size .36rem
+            color #ff7419
+    .btn-primary
+        font-size .3rem
+        background-color #00af6c
+        padding .15rem .5rem
+

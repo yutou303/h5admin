@@ -1,0 +1,67 @@
+@import '../../common/stylus/mixin.styl';
+.tradeselect
+    .type
+        display flex
+        borderTop(1px, #e6e6e6)
+        li
+            flex 1
+            padding .3rem 0
+            font-size .34rem
+            text-align center
+            position relative
+            z-index 2
+            cursor pointer
+            &:before
+                content ''
+                position absolute
+                left 0
+                top 50%
+                width 1px
+                height .3rem
+                background-color #e6e6e6
+                transform translateY(-50%)
+            &:first-child:before
+                display none
+            &.active
+                color #c11920
+                borderTop(2px, #c11920)
+    #statesWrapper
+        borderTop(1px, #e6e6e6)
+        overflow hidden
+        padding 0 .2rem
+        .states-list
+            display flex
+            li
+                padding .25rem
+                white-space nowrap
+                font-size .26rem
+                color #5d5d5d
+                cursor pointer
+                &.active
+                    color #c11920
+    .schWrapper
+        padding .2rem
+        position relative
+        .sch-btn
+            position absolute
+            left .3rem
+            top .2rem
+            z-index 2
+            font-size .38rem
+            color #616161
+            border none
+            background-color transparent
+            padding .15rem
+        .sch-txt
+            position relative
+            width 100%
+            height .76rem
+            font-size .26rem
+            line-height .76rem
+            border 1px solid #d7d7d7
+            border-radius 3px
+            background-color #f7f7f7
+            padding 0 .75rem
+            color #666
+
+
